@@ -5,14 +5,14 @@ CIS560 project - Multiple Importance Sampling (MIS) path tracer.
 **Sample Renders**
 --------------------
 MIS - Veach renders<br>
-<img src="Rendering/balanced_veach_direct.bmp" height=300></img>
-<img src="Rendering/cube.bmp" height=300></img>
-<img src="Rendering/ring.bmp" height=300></img>
+<img src="Rendering/balanced_veach_direct.bmp" height=400></img>
+<img src="Rendering/cube.bmp" height=400></img>
+<img src="Rendering/ring.bmp" height=400></img>
 
 <br>
 
 Specular Transmission BxDF Implementation<br>
-<img src="Rendering/transmission.bmp" height=300></img>
+<img src="Rendering/transmission.bmp" height=400></img>
 
 <br>
 Transmission and specular weighted material Implementation<br>
