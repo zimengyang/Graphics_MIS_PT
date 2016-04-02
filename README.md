@@ -4,7 +4,7 @@ CIS560 project - Multiple Importance Sampling (MIS) path tracer.
 
 **Sample Renders**
 --------------------
-MIS - Veach renders<br>
+MIS - Veach renders, light source: sphere/cube/ring<br>
 <img src="Rendering/balanced_veach_direct.bmp" height=400></img>
 <img src="Rendering/cube.bmp" height=400></img>
 <img src="Rendering/ring.bmp" height=400></img>
