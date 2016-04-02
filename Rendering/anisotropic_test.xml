@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<scene>
+	<camera>
+		<target>0 0 0</target>
+		<eye>0 0 15</eye>
+		<worldUp>0 1 0</worldUp>
+		<fov>50</fov>
+		<width>800</width>
+		<height>400</height>
+	</camera>
+
+	<geometry type="square" name="Right Wall">
+		<transform>
+			<translate>-5 0 0</translate>
+			<rotate>0 0 0</rotate>
+			<scale>9 9 1</scale>
+		</transform>
+		<material>blinnMaterial1</material>
+	</geometry>
+
+	<geometry type="square" name="Left Wall">
+		<transform>
+			<translate>5 0 0</translate>
+			<rotate>0 0 0</rotate>
+			<scale>9 9 1</scale>
+		</transform>
+		<material>anisotropicMaterial1</material>
+	</geometry>
+
+	<geometry type="sphere" name="Light Source2">
+		<transform>
+			<translate>-5 0 5</translate>
+			<scale>1 1 1</scale>
+		</transform>
+		<material>emissive_material</material>
+	</geometry>
+
+	<geometry type="sphere" name="Light Source1">
+		<transform>
+			<translate>5 0 5</translate>
+			<scale>1 1 1</scale>
+		</transform>
+		<material>emissive_material</material>
+	</geometry>
+
+	<material type="default" name="white_diffuse">
+		<baseColor>1 1 1</baseColor>
+		<bxdf>lambert1</bxdf>
+	</material>
+
+	<material type="default" name="red_diffuse">
+		<baseColor>1 0 0</baseColor>
+		<bxdf>lambert1</bxdf>
+	</material>
+
+	<material type="default" name="green_diffuse">
+		<baseColor>0 1 0</baseColor>
+		<bxdf>lambert1</bxdf>
+	</material>
+
+	<material type="default" name="yellow_diffuse">
+		<baseColor>1 1 0</baseColor>
+		<bxdf>lambert1</bxdf>
+	</material>
+
+	<material type="default" name="blinnMaterial1">
+		<baseColor>0 1 0.5</baseColor>
+		<bxdf>blinn1</bxdf>
+	</material>
+
+	<material type="default" name="anisotropicMaterial1">
+		<baseColor>0 1 0.5</baseColor>
+		<bxdf>anis1</bxdf>
+	</material>
+
+	<material type="light" name="emissive_material" intensity="20">
+		<baseColor>1 1 1</baseColor>
+	</material>
+
+	<material type="light" name="emissive_material2" intensity="50">
+		<baseColor>1 1 0</baseColor>
+	</material>
+
+	<bxdf type="lambert" name="lambert1" diffuseColor="1 1 1">
+	</bxdf>
+
+	<bxdf type="blinnMicrofacet" name="blinn1" reflectionColor="1 1 1" exponent="40">
+	</bxdf>
+
+	<bxdf type="anisotropic" name="anis1" reflectionColor="1 1 1" exponent1="200" exponet2="20">
+	</bxdf>
+
+	<integrator type="directLighting">
+		<maxDepth>5</maxDepth>
+	</integrator>
+
+	<pixelSampleLength>2</pixelSampleLength>
+
+</scene>
