@@ -2,30 +2,40 @@
 CIS560 project - Multiple Importance Sampling (MIS) path tracer.
 
 
-**Sample Renders**
---------------------
-MIS - Veach renders, light source: sphere/cube/ring<br>
-<img src="Rendering/balanced_veach_direct.bmp" height=400></img>
-<img src="Rendering/cube.bmp" height=400></img>
-<img src="Rendering/ring.bmp" height=400></img>
+## Sample Renders
 
+### Multiple Importance Sampling 
+Different light source types:
+
+|Sphere|![](Rendering/balanced_veach_direct.bmp)|
+|-----|-------|
+|Cube|![](Rendering/cube.bmp)|
+|Ring|![](Rendering/ring.bmp)|
 <br>
 
-Specular Transmission BxDF Implementation<br>
-<img src="Rendering/transmission.bmp" height=400></img>
+### Specular Transmission BxDF Implementation
 
-<br>
-Transmission and specular weighted material Implementation<br>
-<img src="Rendering/glass.jpg" height=300></img>
-<img src="Rendering/specular_transmission.jpg" height=300></img>
-
+|Perfect Reflection|
+|------------------|
+|![](Rendering/transmission.bmp)|
 <br>
 
-Perfect reflection bxdf implemantation<br>
-<img src="Rendering/specular.bmp" height=300></img>
+### Transmission and specular weighted material Implementation
 
+|Glass1|Glass2|
+|------|------|
+|![](Rendering/glass.jpg)|![](Rendering/specular_transmission.jpg)|
 <br>
 
-Direct lighting sample VS MIS<br>
-<img src="Rendering/directManySpheres.bmp" height=300></img>
-<img src="Rendering/indirectManySpheres.bmp" height=300></img>
+### Perfect reflection bxdf implemantation<br>
+
+|Perfect Reflection|
+|------------------|
+|![](Rendering/specular.bmp)|
+<br>
+
+### Direct lighting sample VS MIS<br>
+
+|Direct Lighting Only|MIS|
+|------|------|
+|![](Rendering/directManySpheres.bmp)|![](Rendering/indirectManySpheres.bmp)|
